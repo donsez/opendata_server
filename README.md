@@ -9,6 +9,7 @@ Author : Didier DONSEZ
 ## Setup
 
 ```bash
+./setup.sh
 docker-compose up -d
 docker-compose logs -f
 ```
@@ -24,6 +25,12 @@ TODO
 ```bash
 curl http://localhost:8083/api/villes?s=GREN&l=10
 ```
+
+## Query with Mongo Compass
+
+Install [Mongo Compass](https://www.mongodb.com/en/products/compass).
+
+Connect to `locahost:
 
 ## TODO
 * [ ] Retirer res.header("Access-Control-Allow-Origin", "*"); du routage
