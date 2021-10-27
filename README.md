@@ -30,7 +30,7 @@ curl http://localhost:8083/api/villes?s=GREN&l=10
 
 Install [Mongo Compass](https://www.mongodb.com/en/products/compass).
 
-Connect to `locahost:
+Connect to `locahost:27017`
 
 ## TODO
 * [ ] Retirer res.header("Access-Control-Allow-Origin", "*"); du routage
