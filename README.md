@@ -6,6 +6,11 @@ Author : Didier DONSEZ
 * NodeJS (mongoose, express)
 * MongoDB
 
+## Download the datasets
+```bash
+./download_cadastre.sh
+```
+
 ## Setup
 
 ```bash
@@ -14,13 +19,24 @@ docker-compose up -d
 docker-compose logs -f
 ```
 
-## Load data intop MongoDB
+## Load data into MongoDB
 
 ```bash
-TODO
+./import_cadastre.sh
+./import_villes_insee.sh
 ```
 
-## Test
+## Query MongoDB
+
+Queries are in `query_villesInsee.cmd` and `query_cadastre.cmd`.
+
+```bash
+cat query_villesInsee.cmd
+cat query_cadastre.cmd
+./query_mongodb.sh .sh
+```
+
+## Query the REST API
 
 ```bash
 curl http://localhost:8083/api/villes?s=GREN&l=10
